@@ -9,14 +9,14 @@
 Pod::Spec.new do |spec|
   spec.name         = "practiceButton"
   spec.version      = "1.0.0"
-  spec.license      = { :type => 'BSD' }
+  spec.license      = { :type => 'MIT' }
   spec.platform     = :ios, "15.0"
   spec.homepage     = "https://github.com/Bhavik283/practiceButton"
 
   spec.author       = { "Bhavik" => "bhavik.goyal@ril.com" }
-  spec.summary      = "A short description of practiceButton."
+  spec.summary      = "practice button design system"
   spec.source       = { :git => "https://github.com/Bhavik283/practiceButton.git", :tag => "#{spec.version}" }
-  spec.source_files = 'practiceButton/**/*.{swift}'
+  spec.source_files = 'practiceButton/practiceButton/Components/**/*.swift'
   spec.framework    = 'UIKit'
   spec.swift_versions = "5.0"
 end
