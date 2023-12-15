@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "practiceButton"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.license      = { :type => 'MIT' }
   spec.platform     = :ios, "15.0"
   spec.homepage     = "https://github.com/Bhavik283/practiceButton"
