@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Bhavik" => "bhavik.goyal@ril.com" }
   spec.summary      = "practice button design system"
   spec.source       = { :git => "https://github.com/Bhavik283/practiceButton.git", :tag => "#{spec.version}" }
-  spec.source_files = 'practiceButton/practiceButton/Components/**/*.swift'
+  spec.source_files = 'practiceButton/Components/**/*.swift'
   spec.framework    = 'UIKit'
   spec.swift_versions = "5.0"
 end
