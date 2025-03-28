@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		800995342B2985640047D417 /* practiceButton.docc in Sources */ = {isa = PBXBuildFile; fileRef = 800995332B2985640047D417 /* practiceButton.docc */; };
 		8009953A2B2985650047D417 /* practiceButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8009952F2B2985640047D417 /* practiceButton.framework */; };
+		8009953F2B2985650047D417 /* practiceButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009953E2B2985650047D417 /* practiceButtonTests.swift */; };
 		800995402B2985650047D417 /* practiceButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 800995322B2985640047D417 /* practiceButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8009956A2B298CBE0047D417 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800995692B298CBE0047D417 /* Button.swift */; };
 		801D85832B2ADDEF00B767BD /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D85822B2ADDEF00B767BD /* Avatar.swift */; };
 		801D85852B2ADDF700B767BD /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D85842B2ADDF700B767BD /* Badge.swift */; };
+		80DDC2B62B73556700C5A02F /* BetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDC2B52B73556700C5A02F /* BetaView.swift */; };
+		80DDC2B92B73559100C5A02F /* BetaViewAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDC2B82B73559100C5A02F /* BetaViewAttributes.swift */; };
+		80DDC2BB2B7355AA00C5A02F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDC2BA2B7355AA00C5A02F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +34,13 @@
 		800995322B2985640047D417 /* practiceButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = practiceButton.h; sourceTree = "<group>"; };
 		800995332B2985640047D417 /* practiceButton.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = practiceButton.docc; sourceTree = "<group>"; };
 		800995392B2985650047D417 /* practiceButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8009953E2B2985650047D417 /* practiceButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceButtonTests.swift; sourceTree = "<group>"; };
 		800995692B298CBE0047D417 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		801D85822B2ADDEF00B767BD /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		801D85842B2ADDF700B767BD /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		80DDC2B52B73556700C5A02F /* BetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaView.swift; sourceTree = "<group>"; };
+		80DDC2B82B73559100C5A02F /* BetaViewAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaViewAttributes.swift; sourceTree = "<group>"; };
+		80DDC2BA2B7355AA00C5A02F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				800995312B2985640047D417 /* practiceButton */,
+				8009953D2B2985650047D417 /* practiceButtonTests */,
 				800995302B2985640047D417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,14 +90,33 @@
 			path = practiceButton;
 			sourceTree = "<group>";
 		};
+		8009953D2B2985650047D417 /* practiceButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				8009953E2B2985650047D417 /* practiceButtonTests.swift */,
+			);
+			path = practiceButtonTests;
+			sourceTree = "<group>";
+		};
 		801D85862B2ADDFC00B767BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				80DDC2BA2B7355AA00C5A02F /* Utils.swift */,
+				80DDC2B72B73557C00C5A02F /* BetaView */,
 				801D85822B2ADDEF00B767BD /* Avatar.swift */,
 				801D85842B2ADDF700B767BD /* Badge.swift */,
 				800995692B298CBE0047D417 /* Button.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		80DDC2B72B73557C00C5A02F /* BetaView */ = {
+			isa = PBXGroup;
+			children = (
+				80DDC2B52B73556700C5A02F /* BetaView.swift */,
+				80DDC2B82B73559100C5A02F /* BetaViewAttributes.swift */,
+			);
+			path = BetaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				801D85832B2ADDEF00B767BD /* Avatar.swift in Sources */,
+				80DDC2B62B73556700C5A02F /* BetaView.swift in Sources */,
 				801D85852B2ADDF700B767BD /* Badge.swift in Sources */,
+				80DDC2BB2B7355AA00C5A02F /* Utils.swift in Sources */,
 				800995342B2985640047D417 /* practiceButton.docc in Sources */,
 				8009956A2B298CBE0047D417 /* Button.swift in Sources */,
+				80DDC2B92B73559100C5A02F /* BetaViewAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8009953F2B2985650047D417 /* practiceButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
